@@ -226,11 +226,11 @@ contract StandardToken is ERC20, BasicToken {
  * @dev Configurable varriables of the contract
  **/
 contract Configurable {
-    uint256 public constant cap = 11000000000000000000000;
-    uint256 public constant basePrice = 10000000000000000000; // tokens per 1 ether
+    uint256 public constant cap = 100000e18;
+    uint256 public constant basePrice = 100000e18; // tokens per 1 ether
     uint256 public tokensSold = 0;
     
-    uint256 public constant tokenReserve = 10000000000000000000;
+    uint256 public constant tokenReserve = 5e18;
     uint256 public remainingTokens = 0;
 }
 /**
